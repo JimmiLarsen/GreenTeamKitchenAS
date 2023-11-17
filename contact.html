@@ -7,23 +7,85 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
 </head>
 <style>
   /* Navi styling */
   .navbar-nav a {
     font-size: 24px; /* Navi font size */
       color: #3D3A3A; /* Navi color */
-  }
+}
   /* Navi hover */
   .navbar-nav a:hover {
             color: #BFAC98;
-        }
+}
+.navbar-brand img {
+    max-width: 100%; /* Gør logoet responsivt */
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    /* Vis navigationselementerne under logoet på små skærme (md) */
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+.hero {
+    position: relative;
+}
+
+.contenthvorforos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    /* Ændr tekststørrelsen for små skærme (sm) */
+    .contenthvorforos h1 {
+      font-size: 32px;
+  }
+}
+
+  @media (min-width: 992px) {
+    /* Ændr tekststørrelsen for store skærme (lg) */
+    .contenthvorforos h1 {
+      font-size: 160px;
+  }
+}
+h1 {
+  padding: 15px;
+  font-family: 'Syne', sans-serif;
+
+}
+  .contenthvorforos h1 {
+  color: black;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+}
+body {
+  background-color:rgb(253, 243, 228)
+}
+
+    
 </style>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken.png" alt="Logo" width="500" height="100" class="d-inline-block align-top"></a>
+      <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken2.png" alt="Logo" width="500" height="100" class="d-inline-block align-top"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,8 +105,15 @@
       </div>
     </div>
   </nav>
+
+
   <div class="hero">
-    <img src="Billeder/KitchenHvorforOs-version2.gif.jpg" alt="Logo" class="img-fluid d-inline-block align-top">
+    <div class="contenthvorforos">
+      <h1>Hvorfor Os</h1>
+    </div class="text-lg">
+    <video autoplay loop muted width="100%" height="100%">
+      <source src="Billeder/HvorforOs-Version7.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="Stiftet">
     <h1>Stiftet</h1>
@@ -82,7 +151,7 @@
             <p>Disse værdier er hjørnestenene i Kitchen A/S og den måde, hvorpå vi skaber ekstraordinære køkkener til vores kunder."</p>
         </div>
         <div class="col-lg-6 order-lg-1">
-          <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken.png" alt="Logo" width="300" height="90" class="d-inline-block align-top"></a>
+          <a class="navbar-brand" href="#logo"><img src="Billeder/HvorforOsKitchen2.jpg" alt="VærdierBillede" class="d-inline-block align-top"></a>
         </div>
       </div>
     </div>
@@ -99,7 +168,7 @@
             Ved at vælge et køkken fra Kitchen A/S, bliver du en del af en bevægelse hen imod en mere bæredygtig fremtid. Sammen kan vi skabe smukke, funktionelle rum, der ikke kun beriger dit hjem, men også bidrager til en sundere planet.</p>
         </div>
         <div class="col-lg-6 order-lg-2">
-          <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken.png" alt="Logo" width="300" height="90" class="d-inline-block align-top"></a>
+          <a class="navbar-brand" href="#logo"><img src="Billeder/HvorforOsKitchen.jpg" alt="Fremtiden" class="d-inline-block align-top"></a>
         </div>
       </div>
     </div>
