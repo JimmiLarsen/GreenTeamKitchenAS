@@ -1,22 +1,48 @@
+<!-- header.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <style>
+        /* Navi styling */
+        .navbar-nav a {
+            font-size: 24px; /* Navi font size */
+            color: #3D3A3A; /* Navi color */
+        }
+        /* Navi hover */
+        .navbar-nav a:hover {
+            color: #BFAC98;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken.png" alt="Logo" width="500" height="100" class="d-inline-block align-top"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-    <header>
-      <a href="index.html"><img src="Billeder/logo-kokken.png" alt="logo-kokken" width="250"></a>
-      <h1>Kitchen a/s </h1>
-      <a id="c"> Kontakt </a>
-    </header>
-
-    <nav>
-        <span><a class="active" onclick="location='index.html'">Forside </a></span>
-        <span onclick="location='product.html'">Product</span>
-        <span onclick="location='kitchen.html'">Kitchen</span>
-    </nav>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#omos">Om os</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kategori">Produkt kategori</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#inspiration">Inspiration til køkken</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </body>
 </html>
