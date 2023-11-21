@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+          <!-- Bootstrap implamentering -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+
+        <!-- Google font implamentering -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
@@ -41,7 +47,7 @@
 .hero {
     position: relative;
 }
-
+    /* her kan man se hvordan det ser ud i CSS når man kalder en class */
 .contenthvorforos {
     position: absolute;
     top: 50%;
@@ -51,30 +57,36 @@
 }
 
 @media (max-width: 576px) {
-    /* Ændr tekststørrelsen for små skærme (sm) */
+    /* Ændr tekststørrelsen for små skærme (sm) - Altså er skærmen over 576px skal denne her @media ikke tælle */
     .contenthvorforos h1 {
       font-size: 32px;
   }
 }
 
   @media (min-width: 992px) {
-    /* Ændr tekststørrelsen for store skærme (lg) */
+    /* Ændr tekststørrelsen for store skærme (lg) - Altså er skærmen under 992px skal denne her @media ikke tælle */
     .contenthvorforos h1 {
       font-size: 160px;
   }
 }
+    /* hær sætter vi CSSen generel h1 */
 h1 {
   padding: 15px;
   font-family: 'Syne', sans-serif;
 
 }
+    /* her går vi så ind og sige jamen det her specifike element skal H1 være sort og hvilken tykkelse. Fordi vi ikke ændre på fonten her bruger den stadig
+    det vi sagde den skulle bruge oppe i h1 */
   .contenthvorforos h1 {
   color: black;
   font-weight: 600;
 }
+
+    /* her går vi ind og siger at skrift størelsen skal være 16px */
 p {
   font-size: 16px;
 }
+    /* Baggrund på body */
 body {
   background-color:rgb(253, 243, 228)
 }
@@ -106,11 +118,12 @@ body {
     </div>
   </nav>
 
-
+<!-- Her ser man vores hero, en film af et stilbillede som kører fra side til side. -->
   <div class="hero">
     <div class="contenthvorforos">
       <h1>Hvorfor Os</h1>
     </div class="text-lg">
+    <!-- Her har vi et række attributes som for vores film til state når siden åbnes, kører i loop og ikke have lyd på. Width og Height bestemmer højden på billedet -->
     <video autoplay loop muted width="100%" height="100%">
       <source src="Billeder/HvorforOs-Version7.mp4" type="video/mp4">
     </video>
@@ -139,6 +152,9 @@ body {
     <h1>Værdier</h1>
     <div class="container-fluid">
       <div class="row">
+          <!-- I klassenavnet her indgår der 2 Bootstrap elementer "col-lg-6" og "order-lg-2. Kort sagt den ene siger at div klassen her har 6 col ud af de 12
+            på en lg(large) skærm. order-lg-2 siger at de coloner som er i den her div klasse skal vises på 2 når vi er på stor skærm.
+            1 = Venstre, 2 = Højre" -->
         <div class="col-lg-6 order-lg-2">
           <p>Hos Kitchen A/S tror vi på, at vores værdier er fundamentet for vores succes og kundetilfredshed. Disse værdier afspejles i hver eneste facet af vores virksomhed, fra designprocessen til den endelige installation af dit drømmekøkken. Vores engagement i disse principper sikrer, at vi konsekvent leverer produkter og service af højeste kvalitet.</p>
           <ul>
@@ -161,6 +177,9 @@ body {
     <h1>Fremtiden</h1>
     <div class="container-fluid">
       <div class="row">
+          <!-- I klassenavnet her indgår der 2 Bootstrap elementer "col-lg-6" og "order-lg-2. Kort sagt den ene siger at div klassen her har 6 col ud af de 12
+            på en lg(large) skærm. order-lg-2 siger at de coloner som er i den her div klasse skal vises på 2 når vi er på stor skærm.
+            1 = Venstre, 2 = Højre" -->
         <div class="col-lg-6 order-lg-1">
           <p>Hos Kitchen A/S er vi dedikerede til at gå forrest i branchen, når det gælder om at skabe bæredygtige og miljøvenlige køkkener. Vi forstår vigtigheden af at tage ansvar for vores planet, og vi arbejder utrætteligt for at sikre, at vores kunder kan investere i deres drømmekøkken med god samvittighed.
             Vores tilgang til bæredygtighed inkluderer brugen af økologisk ansvarlige materialer, energieffektive produktionsmetoder og innovationer, der reducerer miljøpåvirkningen.             
