@@ -86,36 +86,34 @@ h1 {
 p {
   font-size: 16px;
 }
-    /* Baggrund på body */
-body {
-  background-color:rgb(253, 243, 228)
-}
 
     
 </style>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#logo"><img src="Billeder/logo-kokken2.png" alt="Logo" width="500" height="100" class="d-inline-block align-top"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- MAIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html"><img src="billeder/logo-kokken2.png" alt="Logo" width="500"
+                  height="100" class="d-inline-block align-top"></a>
+          <div class="navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="contact.html">Om os</a></li>
+                  <li class="nav-item"><a class="nav-link" href="produktkategori.html">Produkt kategori</a></li>
+                  <li class="nav-item"><a class="nav-link" href="kitchen.html">Inspiration til køkken</a>
+                  </li>
+              </ul>
+          </div>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#omos">Om os</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#kategori">Produkt kategori</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#inspiration">Inspiration til køkken</a>
-          </li>
-        </ul>
       </div>
-    </div>
+  </nav>
+
+  <!-- BREADCRUMBS -->
+  <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Forside</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Inspiration til køkken</li>
+      </ol>
   </nav>
 
 <!-- Her ser man vores hero, en film af et stilbillede som kører fra side til side. -->
@@ -192,6 +190,11 @@ body {
       </div>
     </div>
   </div>
-      
+      <!--Her er starter vores footer-->
+    <!--på ind i <p></p> står vores footer tekst-->
+    <footer>
+        <p>&copy; 2023 Dette er kun til undervisning brug </p>
+    </footer>
+    <!--Footer er slut-->     
 </body>
 </html>
